@@ -1,0 +1,13 @@
+#set your language below
+language: python
+
+#set language version. This is only required if you use the default Shippable image for your build
+python:
+    - 2.7
+
+build:
+    #commands in this section run inside your CI container. In addition, any commands such as ls, in this section can be used to skip default processing for CI.
+    ci:
+      - "echo $PATH"
+git:
+    submodules: false
